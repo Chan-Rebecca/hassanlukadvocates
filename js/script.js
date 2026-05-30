@@ -110,3 +110,19 @@
 	{
 	    yearEl.textContent = new Date().getFullYear();
 	}
+
+// go up button
+
+	const goUp = document.getElementById("goUp");
+
+	window.addEventListener("scroll", function ()
+	{
+	    goUp.classList.toggle("visible", window.scrollY > 400);
+	}, { passive: true });
+
+	goUp.addEventListener("click", function ()
+	{
+	    window.scrollTo({ top: 0, behavior: "smooth" });
+	});
+
+// go up button end

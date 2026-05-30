@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+
+        <title> Hassan Luk Advocates </title>
+
+        <!--browser icon-->
+        <link   rel = "icon" 
+                href = "images/apple-touch-icon.png" />
+
+        <meta charset = "UTF-8" />
+        <meta name = "author" content = "Rebecca Chan" /> <!--date of creation; Wed, May 27, 2026-->
+        <meta name = "viewport" content = "width=device-width,initial-scale=1,shrink-to-fit=no" />
+
+        <!--custom css-->
+        <link rel = "stylesheet" href = "css/style.css" />
+
+        <!--font awesome link-->
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+        <!--google fonts: Playfair Display and Open Sans-->
+        <link rel = "preconnect" href = "https://fonts.googleapis.com" />
+        <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin />
+        <link href = "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel = "stylesheet" />
+
+    </head>
+
+    <body class = "no-hero">
+
+        <!--header stripe-->
+        <div class = "header-stripe">
+            <div class = "header-stripe-left">
+                <a href = "our-team.html"> Our Attorneys </a>
+                <span class = "stripe-divider"> | </span>
+                <a href = "our-expertise.html"> Our Expertise </a>
+            </div>
+
+            <div class = "header-stripe-right">
+                <span class = "header-stripe-hours">
+                    <i class = "fa-regular fa-clock"></i>
+                    Mon – Fri: 08:00 – 16:00
+                </span>
+                <span class = "stripe-divider"> | </span>
+                <span class = "header-stripe-email">
+                    <i class = "fa-regular fa-envelope"></i>
+                    info@hassanlukadvocates.com
+                </span>
+            </div>
+        </div>
+        <!--header stripe end-->
+
+        <!--header-->
+        <header id = "site-header">
+            <div class = "header-inner">
+                <!--logo-->
+                <a href = "index.html" class = "logo">
+                    <img src = "images/logo.png" alt = "Hassan Luk Advocates" />
+                    <span class = "logo-name"> Hassan Luk Advocates </span>
+                </a>
+
+                <!--nav-->
+                <nav class = "navbar" id = "navbar">
+                    <ul class = "nav-links">
+                        <li> <a href = "index.html"> Home </a> </li>
+                        <li> <a href = "about.html"> About </a> </li>
+                        <li> <a href = "our-expertise.html"> Our Expertise </a> </li>
+                        <li> <a href = "our-team.html"> Our Team </a> </li>
+                        <li> <a href = "contact.html" class = "active"> Contact </a> </li>
+                    </ul>
+                </nav>
+
+                <!--mobile menu button-->
+                <button class = "menu-toggle" id = "menuToggle" aria-label = "Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+        <!--header end-->
+
+        <!--contact-->
+        <section class = "contact">
+
+            <div class = "contact-intro">
+                <h3> CONTACT US </h3>
+                <p>
+                    Whether you have a legal question, need representation, or simply want 
+                    to explore your options, our team is ready to listen and guide you 
+                    every step of the way.
+                </p>
+            </div>
+
+            <div class = "contact-body">
+
+                <!--form side-->
+                <div class = "contact-form-wrap">
+                    <h2> Send us a message </h2>
+                    <em> <i class = "fa-solid fa-lock"></i> Your personal info is not shared </em>
+
+                    <form action = "" method = "post" class = "contact-form">
+                        <div class = "form-group">
+                            <label for = "name"> <i class = "fa-solid fa-user"></i> Full Name </label>
+                            <input  type = "text" 
+                                    id = "name" 
+                                    name = "name" 
+                                    placeholder = "e.g. Jane Doe" 
+                                    required />
+                        </div>
+
+                        <div class = "form-group">
+                            <label for = "email"> <i class = "fa-regular fa-envelope"></i> Email Address </label>
+                            <input  type = "email" 
+                                    id = "email" 
+                                    name = "email" 
+                                    placeholder = "e.g. jane@example.com" 
+                                    required />
+                        </div>
+
+                        <div class = "form-group">
+                            <label for = "topic"> <i class = "fa-solid fa-scale-balanced"></i> Area of Law </label>
+                            <select id = "topic" name = "topic" required>
+                                <option value = "" disabled selected> Select a practice area </option>
+                                <option value = "dispute"> Dispute Resolution & Litigation </option>
+                                <option value = "corporate"> Corporate & Commercial Law </option>
+                                <option value = "property"> Property & Conveyancing </option>
+                                <option value = "family"> Family & Succession Law </option>
+                                <option value = "notarial"> Notarial & Administrative Services </option>
+                                <option value = "other"> Other </option>
+                            </select>
+                        </div>
+
+                        <div class = "form-group">
+                            <label for = "message"> <i class = "fa-regular fa-message"></i> Your Message </label>
+                            <textarea   id = "message" 
+                                        name = "message" 
+                                        rows = "6" 
+                                        placeholder = "Tell us briefly about your matter . . ." 
+                                        required></textarea>
+                        </div>
+                        <button type = "submit" class = "btn-primary"> Send Message </button>
+                    </form>
+                </div>
+
+                <!--offices side-->
+                <div class = "contact-offices">
+                    <h2> Visit our offices </h2>
+                    <div class = "working-hours">
+                        <strong> <i class = "fa-regular fa-clock"></i> Office Hours </strong>
+                        <span> Monday – Friday: 08:00 – 16:00 </span>
+                        <em> Closed on weekends and public holidays. </em>
+                    </div>
+
+                    <div class = "visit-inner">
+                        <div class = "visit-box">
+                            <span> <i class = "fa-solid fa-city"></i> Nairobi, Kenya </span>
+                            <span> <i class = "fa-solid fa-location-dot"></i> 6th Floor, Applewood, Kilimani </span>
+                            <span> <i class = "fa-solid fa-phone"></i> <a href="tel:+254759668554"> +254 759 668 554 </a> </span>
+                            <span> <i class = "fa-solid fa-phone"></i> <a href="tel:+254740666970"> +254 740 666 970 </a> </span>
+                            <span> 
+                                <i class = "fa-regular fa-envelope"></i> 
+                                <a href = "mailto:inquiry@hassanluk.com"> inquiry@hassanluk.com </a> 
+                            </span>
+
+                            <iframe src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7922306118544!2d36.778486174724534!3d-1.2994603986881954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1b1146384663%3A0xd90e0e9abcb51977!2sApplewood%20Adams!5e0!3m2!1sen!2ske!4v1780042414508!5m2!1sen!2ske"
+                                    width = "400" 
+                                    height = "300" 
+                                    style = "border: 0;" 
+                                    allowfullscreen = "" 
+                                    loading = "lazy" 
+                                    referrerpolicy = "no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class = "visit-box">
+                            <span> <i class = "fa-solid fa-city"></i> Juba, South Sudan </span>
+                            <span> <i class = "fa-solid fa-location-dot"></i> 4th Floor, Juba Bazaar, Riverside </span>
+                            <span> <i class = "fa-solid fa-phone"></i> <a href="tel:+211920558000"> +211 920 558 000 </a> </span>
+                            <span> 
+                                <i class = "fa-regular fa-envelope"></i> 
+                                <a href = "mailto:inquiry@hassanluk.com"> inquiry@hassanluk.com </a> 
+                            </span>
+
+                            <iframe src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127215.02782401477!2d31.494786995321885!3d4.860686397182802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1712804abcf3b5f9%3A0xd89839286346c433!2sJuba%2C%20South%20Sudan!5e0!3m2!1sen!2ske!4v1780043033059!5m2!1sen!2ske"
+                                    width = "400" 
+                                    height = "300" 
+                                    style = "border: 0;" 
+                                    allowfullscreen = "" 
+                                    loading = "lazy" 
+                                    referrerpolicy = "no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!--contact end-->
+
+        <!--footer-->
+        <section class = "footer">
+            <div class = "footer-inner">
+                <div class = "footer-box">
+                    <img src = "images/logo.png" />
+                    <p> Hassan Luk Advocates </p>
+                </div>
+
+                <div class = "footer-box">
+                    <h2> Quick Links </h2>
+
+                    <a href = "index.html"> Home </a>
+                    <a href = "about.html"> About </a>
+                    <a href = "our-expertise.html"> Our Expertise </a>
+                    <a href = "our-team.html"> Our Team </a>
+                    <a href = "contact.html" class = "active"> Contact </a>
+                </div>
+
+                <div class = "footer-box">
+                    <h2> Contact Us </h2>
+
+                    <a href = "tel:+254759668554"> <i class = "fa-solid fa-phone"></i> +254 759 668 554 </a>
+                    <a href = "tel:+211920558000"> <i class = "fa-solid fa-phone"></i> +211 920 558 000 </a>
+                    <a href = "mailto:inquiry@hassanlukadvocates.com"> 
+                        <i class = "fa-regular fa-envelope"></i> 
+                        inquiry@hassanlukadvocates.com 
+                    </a>
+                </div>
+
+                <div class = "footer-box">
+                    <h2> Find Us </h2>
+
+                    <span>
+                        <i class = "fa-solid fa-location-dot"></i>
+                        <span class = "footer-address">
+                            6th Floor, Applewood, Kilimani
+                            <em> <i class = "fa-solid fa-city"></i> Nairobi, Kenya </em>
+                        </span>
+                    </span>
+
+                    <span>
+                        <i class = "fa-solid fa-location-dot"></i>
+                        <span class = "footer-address">
+                            4th Floor, Juba Bazaar, Riverside
+                            <em> <i class = "fa-solid fa-city"></i> Juba, South Sudan </em>
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <footer>
+                <p> &copy; Hassan Luk Advocates . <span id = "year" class = "year"></span> </p>
+            </footer>
+        </section>
+        <!--footer end-->
+
+        <!--go up button-->
+        <button class = "go-up" id = "goUp" aria-label = "Back to top">
+            <i class = "fa-solid fa-chevron-up"></i>
+        </button>
+        <!--go up button end-->
+
+        <!--javascript-->
+        <script src = "js/script.js"></script>
+        <!--javascript end-->
+
+    </body>
+</html>
