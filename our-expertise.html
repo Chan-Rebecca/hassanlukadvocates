@@ -6,7 +6,7 @@
 
         <!--browser icon-->
         <link   rel = "icon" 
-                href = "images/apple-touch-icon.png" />
+                href = "images/logo.png" />
 
         <meta charset = "UTF-8" />
         <meta name = "author" content = "Rebecca Chan" /> <!--date of creation; Wed, May 27, 2026-->
@@ -18,11 +18,10 @@
         <!--font awesome link-->
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
-        <!--google fonts: Playfair Display and Open Sans-->
+        <!--google fonts: Lora for display and Noto Sans for body-->
         <link rel = "preconnect" href = "https://fonts.googleapis.com" />
         <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin />
-        <link href = "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel = "stylesheet" />
-
+        <link href = "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel = "stylesheet" />
     </head>
 
     <body class = "no-hero">
@@ -31,7 +30,9 @@
         <div class = "header-stripe">
             <div class = "header-stripe-left">
                 <a href = "our-team.html"> Our Attorneys </a>
+
                 <span class = "stripe-divider"> | </span>
+
                 <a href = "our-expertise.html"> Our Expertise </a>
             </div>
 
@@ -40,10 +41,12 @@
                     <i class = "fa-regular fa-clock"></i>
                     Mon – Fri: 08:00 – 16:00
                 </span>
+
                 <span class = "stripe-divider"> | </span>
+
                 <span class = "header-stripe-email">
                     <i class = "fa-regular fa-envelope"></i>
-                    info@hassanlukadvocates.com
+                    <a href = "mailto:info@hassanlukadvocates.com"> info@hassanlukadvocates.com </a>
                 </span>
             </div>
         </div>
@@ -61,11 +64,11 @@
                 <!--nav-->
                 <nav class = "navbar" id = "navbar">
                     <ul class = "nav-links">
-                        <li> <a href = "index.html"> Home </a> </li>
-                        <li> <a href = "about.html"> About </a> </li>
-                        <li> <a href = "our-expertise.html" class = "active"> Our Expertise </a> </li>
-                        <li> <a href = "our-team.html"> Our Team </a> </li>
-                        <li> <a href = "contact.html"> Contact </a> </li>
+                        <li> <a href = "index.html"> <span> Home </span> </a> </li>
+                        <li> <a href = "about.html"> <span> About </span> </a> </li>
+                        <li> <a href = "our-expertise.html" class = "active"> <span> Our Expertise </span> </a> </li>
+                        <li> <a href = "our-team.html"> <span> Our Team </span> </a> </li>
+                        <li> <a href = "contact.html" class = "nav-cta"> <span> Get in touch </span> </a> </li>
                     </ul>
                 </nav>
 
@@ -82,22 +85,23 @@
         <!--expertise-->
         <section class = "expertise">
             <div class = "expertise-intro">
-                <h3> OUR EXPERTISE </h3>
+                <div class = "expertise-intro-img">
+                    <img src = "images/expertise.jpg" />
+                </div>
 
-                <div class = "expertise-intro-container">
-                    <div class = "expertise-intro-img">
-                        <img src = "images/expertise.jpg" />
-                    </div>
+                <div class = "expertise-intro-text">
+                    <h3> OUR EXPERTISE </h3>
 
-                    <div class = "expertise-intro-text">
-                        <h2> We are a destination law firm: ambitious, imaginative and distinctive! </h2>
+                    <h2> We are a destination law firm: ambitious, imaginative and distinctive! </h2>
 
-                        <p>
-                            Hassan Luk LLP is about our people. We know that if our lawyers are happy in their work, clients will get the best from them. We created Hassan Luk LLP to give ambitious lawyers like us a platform to develop their career in a way which works for them, whilst providing clients with outstanding legal support. In a relationship-driven industry, having the right team who share our skills and values is everything. <br/>
+                    <p>
+                        Hassan Luk LLP is about our people. We know that if our lawyers are happy in their work, clients will get the best from them. We created Hassan Luk LLP to give ambitious lawyers like us a platform to develop their career in a way which works for them, whilst providing clients with outstanding legal support. In a relationship-driven industry, having the right team who share our skills and values is everything.
+                    </p>
 
-                            Our people are practical, approachable and pride themselves in offering clear and practical advice. You will find contact details for our people here.
-                        </p>
-                    </div>
+                    <p>
+
+                        Our people are practical, approachable and pride themselves in offering clear and practical advice. You will find contact details for our people here.
+                    </p>
                 </div>
             </div>
 
@@ -198,11 +202,15 @@
             <h2> Regulatory Compliance </h2>
 
             <div class = "regulatory">
-                <p>
-                    Today’s regulatory environment is more proactive and stringent than ever. For businesses and individuals alike, navigating these expanding requirements requires foresight; managing a compliance breach requires decisive, strategic action. Whether you are proactively implementing best practices or urgently navigating an active investigation, disciplinary proceeding, or threat to your reputation, clear legal guidance is vital. <br/>
+                <div class = "regulatory-text">
+                    <p>
+                        Today’s regulatory environment is more proactive and stringent than ever. For businesses and individuals alike, navigating these expanding requirements requires foresight; managing a compliance breach requires decisive, strategic action. Whether you are proactively implementing best practices or urgently navigating an active investigation, disciplinary proceeding, or threat to your reputation, clear legal guidance is vital.
+                    </p>
 
-                    Our dedicated team of regulatory specialists possesses a unique dual perspective. We regularly act for regulatory bodies conducting investigations and presenting cases, as well as for corporations and individuals facing enforcement, prosecution, and compliance actions. This comprehensive insight allows us to guide you through every stage of the process with confidence, safeguarding your operations and your reputation.
-                </p>
+                    <p>
+                        Our dedicated team of regulatory specialists possesses a unique dual perspective. We regularly act for regulatory bodies conducting investigations and presenting cases, as well as for corporations and individuals facing enforcement, prosecution, and compliance actions. This comprehensive insight allows us to guide you through every stage of the process with confidence, safeguarding your operations and your reputation.
+                    </p>
+                </div>
 
                 <ul>
                     <li> <i class = "fa-solid fa-shield-halved"></i> Data Protection & Privacy </li>
@@ -220,63 +228,106 @@
 
         <!--footer-->
         <section class = "footer">
-            <div class = "footer-inner">
-                <div class = "footer-box">
-                    <img src = "images/logo.png" />
-                    <p> Hassan Luk Advocates </p>
+
+            <div class = "footer-top">
+
+                <div class = "footer-brand">
+                    <img src = "images/logo.png" alt = "Hassan Luk Advocates">
+
+                    <h2> Hassan Luk Advocates </h2>
+
+                    <p>
+                        Strategic legal counsel across East Africa,
+                        delivering practical solutions for businesses,
+                        families and institutions.
+                    </p>
                 </div>
 
-                <div class = "footer-box">
-                    <h2> Quick Links </h2>
+                <div class = "footer-grid">
 
-                    <a href = "index.html"> Home </a>
-                    <a href = "about.html"> About </a>
-                    <a href = "our-expertise.html" class = "active"> Our Expertise </a>
-                    <a href = "our-team.html"> Our Team </a>
-                    <a href = "contact.html"> Contact </a>
+                    <div class = "footer-box">
+                        <h3> Quick Links </h3>
+
+                        <a href = "index.html"> Home </a>
+                        <a href = "about.html"> About </a>
+                        <a href = "our-expertise.html"> Our Expertise </a>
+                        <a href = "our-team.html"> Our Team </a>
+                        <a href = "contact.html"> Contact </a>
+                    </div>
+
+                    <div class = "footer-box">
+                        <h3> Contact </h3>
+
+                        <a href = "tel:+254759668554">
+                            +254 759 668 554
+                        </a>
+
+                        <a href = "tel:+211920558000">
+                            +211 920 558 000
+                        </a>
+
+                        <a href = "mailto:inquiry@hassanlukadvocates.com">
+                            inquiry@hassanlukadvocates.com
+                        </a>
+                    </div>
+
+                    <div class = "footer-box">
+                        <h3> Offices </h3>
+
+                        <p>
+                            6th Floor, Applewood, Kilimani<br>
+                            Nairobi, Kenya
+                        </p>
+
+                        <p>
+                            4th Floor, Juba Bazaar, Riverside<br>
+                            Juba, South Sudan
+                        </p>
+                    </div>
+
+                    <div class = "footer-box">
+                        <h3> Follow Us </h3>
+
+                        <div class = "footer-social">
+
+                            <a href = "">
+                                <i class = "fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href = "">
+                                <i class = "fa-brands fa-x-twitter"></i>
+                            </a>
+
+                            <a href = "">
+                                <i class = "fa-brands fa-linkedin-in"></i>
+                            </a>
+
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class = "footer-box">
-                    <h2> Contact Us </h2>
-
-                    <a href = "tel:+254759668554"> <i class = "fa-solid fa-phone"></i> +254 759 668 554 </a>
-                    <a href = "tel:+211920558000"> <i class = "fa-solid fa-phone"></i> +211 920 558 000 </a>
-                    <a href = "mailto:inquiry@hassanlukadvocates.com"> 
-                        <i class = "fa-regular fa-envelope"></i> 
-                        inquiry@hassanlukadvocates.com 
-                    </a>
-                </div>
-
-                <div class = "footer-box">
-                    <h2> Find Us </h2>
-
-                    <span>
-                        <i class = "fa-solid fa-location-dot"></i>
-                        <span class = "footer-address">
-                            6th Floor, Applewood, Kilimani
-                            <em> <i class = "fa-solid fa-city"></i> Nairobi, Kenya </em>
-                        </span>
-                    </span>
-
-                    <span>
-                        <i class = "fa-solid fa-location-dot"></i>
-                        <span class = "footer-address">
-                            4th Floor, Juba Bazaar, Riverside
-                            <em> <i class = "fa-solid fa-city"></i> Juba, South Sudan </em>
-                        </span>
-                    </span>
-                </div>
             </div>
 
-            <footer>
-                <p> &copy; Hassan Luk Advocates . <span id = "year" class = "year"></span> </p>
-            </footer>
+            <div class = "footer-bottom">
+
+                <div class = "footer-legal">
+                    <a href = ""> Terms & Conditions </a>
+                    <a href = ""> Privacy Policy </a>
+                </div>
+
+                <p> © Hassan Luk Advocates . <span id = "year"></span> . All Rights Reserved. </p>
+
+                <p> Created by <a href = ""> R.Chan </a> </p>
+
+            </div>
+
         </section>
         <!--footer end-->
 
         <!--go up button-->
         <button class = "go-up" id = "goUp" aria-label = "Back to top">
-            <i class = "fa-solid fa-chevron-up"></i>
+            <i class = "fa-solid fa-arrow-up"></i>
         </button>
         <!--go up button end-->
 

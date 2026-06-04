@@ -6,7 +6,7 @@
 
         <!--browser icon-->
         <link   rel = "icon" 
-                href = "images/apple-touch-icon.png" />
+                href = "images/logo.png" />
 
         <meta charset = "UTF-8" />
         <meta name = "author" content = "Rebecca Chan" /> <!--date of creation; Wed, May 27, 2026-->
@@ -18,11 +18,10 @@
         <!--font awesome link-->
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
-        <!--google fonts: Playfair Display and Open Sans-->
+        <!--google fonts: Lora for display and Noto Sans for body-->
         <link rel = "preconnect" href = "https://fonts.googleapis.com" />
         <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin />
-        <link href = "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel = "stylesheet" />
-
+        <link href = "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel = "stylesheet" />
     </head>
 
     <body>
@@ -31,7 +30,9 @@
         <div class = "header-stripe">
             <div class = "header-stripe-left">
                 <a href = "our-team.html"> Our Attorneys </a>
+
                 <span class = "stripe-divider"> | </span>
+
                 <a href = "our-expertise.html"> Our Expertise </a>
             </div>
 
@@ -40,10 +41,12 @@
                     <i class = "fa-regular fa-clock"></i>
                     Mon – Fri: 08:00 – 16:00
                 </span>
+
                 <span class = "stripe-divider"> | </span>
+
                 <span class = "header-stripe-email">
                     <i class = "fa-regular fa-envelope"></i>
-                    info@hassanlukadvocates.com
+                    <a href = "mailto:info@hassanlukadvocates.com"> info@hassanlukadvocates.com </a>
                 </span>
             </div>
         </div>
@@ -61,11 +64,11 @@
                 <!--nav-->
                 <nav class = "navbar" id = "navbar">
                     <ul class = "nav-links">
-                        <li> <a href = "index.html" class = "active"> Home </a> </li>
-                        <li> <a href = "about.html"> About </a> </li>
-                        <li> <a href = "our-expertise.html"> Our Expertise </a> </li>
-                        <li> <a href = "our-team.html"> Our Team </a> </li>
-                        <li> <a href = "contact.html"> Contact </a> </li>
+                        <li> <a href = "index.html" class = "active"> <span> Home </span> </a> </li>
+                        <li> <a href = "about.html"> <span> About </span> </a> </li>
+                        <li> <a href = "our-expertise.html"> <span> Our Expertise </span> </a> </li>
+                        <li> <a href = "our-team.html"> <span> Our Team </span> </a> </li>
+                        <li> <a href = "contact.html" class = "nav-cta"> <span> Get in touch </span> </a> </li>
                     </ul>
                 </nav>
 
@@ -116,14 +119,14 @@
                         <p class = "hero-eyebrow"> Strategic Legal Counsel </p>
                         <h1 class = "hero-heading"> Trusted by <br> <em> Individuals &amp; Corporates. </em> </h1>
                         <p class = "hero-sub"> Over two decades of East African legal expertise. </p>
-                        <a href = "services.html" class = "btn-primary"> Our Practice Areas </a>
+                        <a href = "our-expertise.html" class = "btn-primary"> Our Practice Areas </a>
                     </div>
 
                     <div class = "hero-message">
                         <p class = "hero-eyebrow"> Excellence in Advocacy </p>
                         <h1 class = "hero-heading"> Your Rights. <br> <em> Our Mission. </em> </h1>
                         <p class = "hero-sub"> Principled representation across every matter. </p>
-                        <a href = "about.html" class = "btn-primary"> Meet Our Attorneys </a>
+                        <a href = "our-team.html" class = "btn-primary"> Meet Our Attorneys </a>
                     </div>
                 </div>
 
@@ -137,367 +140,585 @@
         </section>
         <!--hero section end-->
 
+        <!--what-we-do-->
+        <section class = "what-we-do">
+            <div class = "what-we-do-intro">
+                <h3> Redefining the legal landscape </h3>
+
+                <p>
+                    Whether you are a commercial enterprise or an individual client, we dedicate our full expertise to striving for first-class legal counsel and exceptional service tailored to your needs.
+                </p>
+            </div>
+
+            <div class = "what-we-do-container">
+                <div class = "what-we-do-box">
+                    <img src = "images/what-we-do.jpg" />
+                    <p> Unique & New Business Tips <br/> For Our Clients </p>
+                    <a href = "our-expertise.html"> Read More </a>
+                </div>
+
+                <div class = "what-we-do-box">
+                    <img src = "images/what-we-do-2.jpg" />
+                    <p> The Best Way To Boost <br/> Your Potential </p>
+                    <a href = "our-expertise.html"> Read More </a>
+                </div>
+            </div>
+        </section>
+        <!--what-we-do-end-->
+
         <!--legal-->
         <section class = "legal">
             <div class = "legal-img">
-                <img src = "images/legal.jpg" alt = "Legal Services" />
+                <img src = "images/legal-bw.jpg" alt = "Legal Services" />
             </div>
 
             <div class = "legal-text">
-                <p class = "legal-intro"> We provide legal services in every area of law practice : </p>
+                <h2 class = "legal-intro"> 
+                    We provide legal services in every area of law practice : 
+                </h2>
 
-                <span> 
-                    <i class = "fa-solid fa-scale-balanced"></i> 
-                    <a href = "our-expertise.html#dispute"> Dispute Resolution & Litigation </a> 
-                </span>
+                <div class = "legal-group">
+                    <h3> Core Corporate &amp; Business Law </h3>
 
-                <span> 
-                    <i class = "fa-solid fa-briefcase"></i> 
-                    <a href = "our-expertise.html#corporate"> Corporate & Commercial Law </a> 
-                </span>
+                    <div class = "legal-service">
+                        <h4> <i class = "fa-regular fa-building"></i> Private Companies </h4>
+                        <p>
+                            We guide private businesses through every stage of their lifecycle, handling everything from company formation and day-to-day corporate governance to strategic restructuring and shareholder agreements.
+                        </p>
+                    </div>
+                          
+                    <div class = "legal-service">
+                        <h4> <i class = "fa-solid fa-chart-line"></i> Venture Capital </h4>
+                        <p>
+                            We connect high-growth startups with investors, structuring financing rounds, equity allocations, and strategic partnerships that fuel innovation and scale businesses safely.
+                        </p>
+                    </div>
 
-                <span> 
-                    <i class = "fa-solid fa-building"></i> 
-                    <a href = "our-expertise.html#property"> Property & Conveyancing </a> 
-                </span>
+                    <div class = "legal-service">
+                        <h4> <i class = "fa-solid fa-receipt"></i> Corporate Tax </h4>
+                        <p>
+                            We help businesses navigate complex tax landscapes by structuring transactions, managing compliance, and delivering strategic advice to minimize liabilities and maximize profitability.
+                        </p>
+                    </div>
 
-                <span> 
-                    <i class = "fa-solid fa-people-roof"></i> 
-                    <a href = "our-expertise.html#family"> Family & Succession Law </a> 
-                </span>
+                    <div class = "legal-service">
+                        <h4> <i class = "fa-solid fa-scale-balanced"></i> Bankruptcy </h4>
+                        <p>
+                            We provide strategic guidance for businesses and individuals facing financial distress, helping navigate debt restructuring, reorganization, or liquidation to secure a viable financial future.
+                        </p>
+                    </div>
+                </div>
 
-                <span> 
-                    <i class = "fa-solid fa-stamp"></i> 
-                    <a href = "our-expertise.html#notarial"> Notarial & Administrative Services </a> 
-                </span>
+                <div class = "legal-group">
+                    <h3> Global &amp; Mobility Services </h3>
+
+                    <div class = "legal-service">
+                        <h4> <i class = "fa-solid fa-passport"></i> Immigration </h4>
+                        <p>
+                            We assist individuals and families navigating the complexities of visas, permanent residency, and citizenship applications, ensuring a smooth and compliant path to their goals.
+                        </p>
+                    </div>
+
+                    <div class = "legal-service">
+                        <h4> <i class = "fa-solid fa-globe"></i> Business Immigration </h4>
+                        <p>
+                            We help companies secure the global talent they need by managing corporate visas, employee transfers, and workplace compliance for international workforces.
+                        </p>
+                    </div>
+
+                    <div class = "legal-service">
+                        <h4> <i class = "fa-solid fa-earth-africa"></i> International Desk </h4>
+                        <p>
+                            Our cross-border specialists bridge legal and cultural gaps, providing seamless counsel for international clients investing, expanding, or managing disputes across multiple jurisdictions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class = "legal-group">
+                    <h3> Assets, Wealth &amp; Philanthropy </h3>
+
+                    <div class = "legal-service">
+                        <h4> <i class = "fa-solid fa-house"></i> Real Estate </h4>
+                        <p>
+                            We handle the legal complexities of property ownership, advising clients on commercial and residential transactions, leasing, zoning, development, and real estate financing.
+                        </p>
+                    </div>
+
+                    <div class = "legal-service">
+                        <h4> <i class = "fa-solid fa-gem"></i> Private Wealth </h4>
+                        <p>
+                            We provide discrete, comprehensive legal strategies for high-net-worth individuals, focusing on asset protection, cross-border investments, and long-term financial preservation.
+                        </p>
+                    </div>
+
+                    <div class = "legal-service">
+                        <h4> <i class = "fa-solid fa-scroll"></i> Wills and Inheritance </h4>
+                        <p>
+                            We help individuals protect their legacy and provide for loved ones through meticulous estate planning, trusts, and the smooth, compassionate administration of probate.
+                        </p>
+                    </div>
+
+                    <div class = "legal-service">
+                        <h4> <i class = "fa-solid fa-hand-holding-heart"></i> Charities </h4>
+                        <p>
+                            We advise non-profits and philanthropic organizations on formation, tax-exempt status, regulatory compliance, and governance, allowing them to focus entirely on their mission.
+                        </p>
+                    </div>
+                </div>
+
+                <div class = "legal-group">
+                    <h3> Industry Specializations &amp; Personal Advocacy </h3>
+
+                    <div class = "legal-service">
+                        <h4> <i class = "fa-solid fa-leaf"></i> Natural Resources </h4>
+                        <p>
+                            We advise clients in the energy, mining, and environmental sectors on regulatory compliance, licensing, land acquisition, and sustainable project development.
+                        </p>
+                    </div>
+
+                    <div class = "legal-service">
+                        <h4> <i class = "fa-solid fa-briefcase-medical"></i> Work Injury </h4>
+                        <p>
+                            We advocate fiercely for employees injured on the job, securing fair workers' compensation benefits, medical coverage, and financial recovery during their rehabilitation.
+                        </p>
+                    </div>
+
+                    <div class = "legal-service">
+                        <h4> <i class = "fa-solid fa-gavel"></i> Criminal Law </h4>
+                        <p>
+                            We offer robust, strategic defense representation for individuals and corporations facing criminal charges, dedicatedly protecting their rights at every stage of the legal process.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
         <!--legal end-->
 
-        <!--family and business-->
-        <section class = "family">
-            <div class = "family-inner">
-                <img src = "images/family.jpg" />
+        <!--testimonials-->
+        <section class = "testimonials">
+            <div class = "testimonials-inner">
+                <div class = "testimonials-track">
 
-                <span class = "family-inner-text">
-                    <h3> Navigating Your Family's Legal Needs </h3>
-                    
-                    <p>
-                        Life is dynamic. While some milestones are carefully planned, others arrive unexpectedly and can feel overwhelming. Whatever transition your family is facing, the advocates at Hassan Luk are here to provide clear guidance, compassionate support, and steadfast representation to protect what matters most.
-                    </p> 
-                </span>
-            </div>
+                    <!--1-->
+                    <div class = "quote-box active">
+                        <div class = "quote-mark"> “ </div>
 
-            <div class = "family-inner">
-                <img src = "images/business.jpg" />
+                        <div class = "quote-content">
+                            <p class = "quote">
+                                Navigating the regulatory frameworks between Nairobi and Kampala seemed daunting for our logistics business. The team's deep understanding of regional trade laws made our expansion incredibly smooth. They are our trusted legal partners in East Africa.
+                            </p>
 
-                <span class = "family-inner-text"> 
-                    <h3> Strategic Solutions for Your Business </h3>
+                            <div class = "quote-footer">
+                                <div>
+                                    <div class = "stars">
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                    </div>
 
-                    <p>
-                        Your business is unique, and off-the-shelf advice won't cut it. At Hassan Luk, we partner with you to deliver tailored legal strategies that drive concrete results. From mitigating complex risks to paving the way for new opportunities, our advocates work collaboratively to craft ideal solutions for your commercial success.
-                    </p>
-                </span>
+                                    <span class = "speaker">
+                                        Director, Regional Logistics Firm (Kenya & Uganda)
+                                    </span>
+                                </div>
+
+                                <div class = "testimonials-nav">
+                                    <button class = "t-prev" aria-label = "Previous">
+                                        <i class = "fa-solid fa-arrow-left"></i>
+                                    </button>
+
+                                    <button class = "t-next" aria-label = "Next">
+                                        <i class = "fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--2-->
+                    <div class = "quote-box">
+                        <div class = "quote-mark"> “ </div>
+
+                        <div class = "quote-content">
+                            <p class = "quote">
+                                From securing licensing to handling complex natural resource regulations in South Sudan, their legal counsel was flawless. They possess a rare combination of local insight and international standards.
+                            </p>
+
+                            <div class = "quote-footer">
+                                <div>
+                                    <div class = "stars">
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                    </div>
+
+                                    <span class = "speaker">
+                                        Operations Manager, Infrastructure Group (Juba, South Sudan)
+                                    </span>
+                                </div>
+
+                                <div class = "testimonials-nav">
+                                    <button class = "t-prev" aria-label = "Previous">
+                                        <i class = "fa-solid fa-arrow-left"></i>
+                                    </button>
+
+                                    <button class = "t-next" aria-label = "Next">
+                                        <i class = "fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--3-->
+                    <div class = "quote-box">
+                        <div class = "quote-mark"> “ </div>
+
+                        <div class = "quote-content">
+                            <p class = "quote">
+                                Managing a cross-border family estate and updating our wills was incredibly stressful until we engaged this firm. They handled our private wealth matters with absolute discretion, clarity, and cultural respect.
+                            </p>
+
+                            <div class = "quote-footer">
+                                <div>
+                                    <div class = "stars">
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                    </div>
+
+                                    <span class = "speaker">
+                                        Private Wealth Client (Kampala, Uganda)
+                                    </span>
+                                </div>
+
+                                <div class = "testimonials-nav">
+                                    <button class = "t-prev" aria-label = "Previous">
+                                        <i class = "fa-solid fa-arrow-left"></i>
+                                    </button>
+
+                                    <button class = "t-next" aria-label = "Next">
+                                        <i class = "fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--4-->
+                    <div class = "quote-box">
+                        <div class = "quote-mark"> “ </div>
+
+                        <div class = "quote-content">
+                            <p class = "quote">
+                                After a severe workplace accident, I didn't know where to turn. The advocates took over my work injury claim with so much empathy and efficiency, securing the compensation I deserved to get my life back on track.
+                            </p>
+
+                            <div class = "quote-footer">
+                                <div>
+                                    <div class = "stars">
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                    </div>
+
+                                    <span class = "speaker">
+                                        Personal Injury Client (Nairobi, Kenya)
+                                    </span>
+                                </div>
+
+                                <div class = "testimonials-nav">
+                                    <button class = "t-prev" aria-label = "Previous">
+                                        <i class = "fa-solid fa-arrow-left"></i>
+                                    </button>
+
+                                    <button class = "t-next" aria-label = "Next">
+                                        <i class = "fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--5-->
+                    <div class = "quote-box">
+                        <div class = "quote-mark"> “ </div>
+
+                        <div class = "quote-content">
+                            <p class = "quote">
+                                Securing work permits and managing compliance for our expatriate team in South Sudan and Kenya used to take months. Their immigration desk streamlined the entire process, saving us invaluable time.
+                            </p>
+
+                            <div class = "quote-footer">
+                                <div>
+                                    <div class = "stars">
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                        <i class = "fa-solid fa-star"></i>
+                                    </div>
+
+                                    <span class = "speaker">
+                                        HR Director, Pan-African NGO
+                                    </span>
+                                </div>
+
+                                <div class = "testimonials-nav">
+                                    <button class = "t-prev" aria-label = "Previous">
+                                        <i class = "fa-solid fa-arrow-left"></i>
+                                    </button>
+
+                                    <button class = "t-next" aria-label = "Next">
+                                        <i class = "fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
-        <!--family and business end-->
-
-        <!--strategy-->
-        <section class = "strategy">
-            <h3> Leading you safely through the law </h3>
-
-            <div class = "strategy-inner">
-                <span> 
-                    <i class = "fa-solid fa-bolt"></i> 
-
-                    <h2> Agile & Responsive Counsel </h2>
-
-                    <p>
-                        We deliver exceptional legal expertise with a refreshingly modern, personalized approach. At the core of our firm’s culture is a simple, powerful purpose that informs everything we think, say, and do: helping you See the Possibility.
-                    </p>
-                </span>
-
-                <span> 
-                    <i class = "fa-solid fa-microchip"></i> 
-
-                    <h2> Technology-Driven Value </h2>
-
-                    <p>
-                        We leverage cutting-edge legal technology to streamline our processes, deepen client relationships, and deliver superior value. This efficiency empowers our comprehensive team of specialists to focus on what matters most—providing you with premier, highly focused legal support across multiple practice areas.
-                    </p>
-                </span>
-
-                <span> 
-                    <i class="fa-solid fa-lightbulb"></i> 
-
-                    <h2> Innovative & Creative Problem Solving </h2>
-
-                    <p>
-                        Recognizing that no two situations are alike, we approach every personal and commercial challenge with fresh eyes. We deliver highly practical, commercially viable, and strictly discreet advice designed to uncover the best possible solution for your unique circumstances.
-                    </p>
-                </span>
-            </div>
-        </section>
-        <!--strategy end-->
+        <!--testimonials end-->
 
         <!--team-->
         <section class = "team">
+            <div class = "team-intro">
+                <h1> Partners & Associates </h1>
+
+                <p> We are a team of specialists ready to offer insight, expertise and support. </p>
+
+                <a href = "our-team.html" class = "btn-primary"> Meet Our Team </a>
+            </div>
+
             <div class = "team-inner">
-                <h3> 
-                    We are a team of specialists ready to offer insight, expertise and support. <br/> <br/>
-
-                    <a href = "our-team.html" class = "btn-primary"> See More </a>
-                </h3>
-
-                <div class = "team-inner-container">
-                    <div class = "team-box">
+                <div class = "team-box">
+                    <a href = "our-team.html">
                         <div class = "team-box-img">
-                            <img src = "images/lawyers/hassan-luk.jpg" />
+                            <img src = "images/lawyers/hassan-luk.jpg" alt = "Hassan Luk" />
                         </div>
+                    </a>
 
-                        <div class = "team-box-desc">
-                            <span> <i class = "fa-solid fa-user"></i> Hassan Luk </span>
-                            <span> <i class = "fa-solid fa-briefcase"></i> Attorney at Law </span>
-                            <span> 
-                                <i class = "fa-regular fa-envelope"></i> 
-                                <a href = "mailto:hassanluk@hassanluk.com"> hassanluk@hassanluk.com </a>
-                            </span>
-                            <span> 
-                                <i class = "fa-brands fa-linkedin"></i> 
-                                <a href = "https://linkedin.com" target = "_blank"> Hassan Luk </a> 
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class = "team-box">
-                        <div class = "team-box-img">
-                            <img src = "images/lawyers/ater.jpg" />
-                        </div>
-
-                        <div class = "team-box-desc">
-                            <span> <i class = "fa-solid fa-user"></i> Ater </span>
-                            <span> <i class = "fa-solid fa-briefcase"></i> Associate </span>
-                            <span> 
-                                <i class = "fa-regular fa-envelope"></i> 
-                                <a href = "mailto:ater@hassanluk.com"> ater@hassanluk.com </a> 
-                            </span>
-                            <span> 
-                                <i class = "fa-brands fa-linkedin"></i> 
-                                <a href = "https://linkedin.com" target = "_blank"> Ater </a>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class = "team-box">
-                        <div class = "team-box-img">
-                            <img src = "images/lawyers/diana.jpg" />
-                        </div>
-
-                        <div class = "team-box-desc">
-                            <span> <i class = "fa-solid fa-user"></i> Diana </span>
-                            <span> <i class = "fa-solid fa-briefcase"></i> Associate </span>
-                            <span> 
-                                <i class = "fa-regular fa-envelope"></i> 
-                                <a href = "mailto:diana@hassanluk.com"> diana@hassanluk.com </a> 
-                            </span>
-                            <span> 
-                                <i class = "fa-brands fa-linkedin"></i>
-                                <a href = "https://linkedin.com" target = "_blank"> Diana </a>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class = "team-box">
-                        <div class = "team-box-img">
-                            <img src = "images/lawyers/kira.jpg" />
-                        </div>
-
-                        <div class = "team-box-desc">
-                            <span> <i class = "fa-solid fa-user"></i> Kira </span>
-                            <span> <i class = "fa-solid fa-briefcase"></i> Attorney at Law </span>
-                            <span> 
-                                <i class = "fa-regular fa-envelope"></i> 
-                                <a href = "mailto:kira@hassanluk.com"> kira@hassanluk.com </a> 
-                            </span>
-                            <span> 
-                                <i class = "fa-brands fa-linkedin"></i>
-                                <a href = "https://linkedin.com" target = "_blank"> Kira </a>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class = "team-box">
-                        <div class = "team-box-img">
-                            <img src = "images/lawyers/majak.jpg" />
-                        </div>
-
-                        <div class = "team-box-desc">
-                            <span> <i class = "fa-solid fa-user"></i> Majak </span>
-                            <span> <i class = "fa-solid fa-briefcase"></i> Attorney at Law </span>
-                            <span> 
-                                <i class = "fa-regular fa-envelope"></i> 
-                                <a href = "mailto:majak@hassanluk.com"> majak@hassanluk.com </a> 
-                            </span>
-                            <span> 
-                                <i class = "fa-brands fa-linkedin"></i>
-                                <a href = "https://linkedin.com" target = "_blank"> Majak </a> 
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class = "team-box">
-                        <div class = "team-box-img">
-                            <img src = "images/lawyers/melissa.jpg" />
-                        </div>
-
-                        <div class = "team-box-desc">
-                            <span> <i class = "fa-solid fa-user"></i> Melissa </span>
-                            <span> <i class = "fa-solid fa-briefcase"></i> Attorney at Law </span>
-                            <span> 
-                                <i class = "fa-regular fa-envelope"></i> 
-                                <a href = "mailto:melissa@hassanluk.com"> melissa@hassanluk.com </a> 
-                            </span>
-                            <span> 
-                                <i class = "fa-brands fa-linkedin"></i>
-                                <a href = "https://linkedin.com" target = "_blank"> Melissa </a> 
-                            </span>
-                        </div>
+                    <div class = "team-box-desc">
+                        <h3 class = "name"> Hassan </h3>
+                        <h5 class = "role"> Attorney at Law </h5>
                     </div>
                 </div>
+
+                <div class = "team-box">
+                    <a href = "our-team.html">
+                        <div class = "team-box-img">
+                            <img src = "images/lawyers/ater.jpg" alt = "Ater" />
+                        </div>
+                    </a>
+
+                    <div class = "team-box-desc">
+                        <h3 class = "name"> Ater </h3>
+                        <h5 class = "role"> Associate </h5>
+                    </div>
+                </div>
+
+                <div class = "team-box">
+                    <a href = "our-team.html">
+                        <div class = "team-box-img">
+                            <img src = "images/lawyers/diana.jpg" alt = "Diana" />
+                        </div>
+                    </a>
+
+                    <div class = "team-box-desc">
+                        <h3 class = "name"> Diana </h3>
+                        <h5 class = "role"> Associate </h5>
+                    </div>
+                </div>
+
+                <div class = "team-box">
+                    <a href = "our-team.html">
+                        <div class = "team-box-img">
+                            <img src = "images/lawyers/kira.jpg" alt = "Kira" />
+                        </div>
+                    </a>
+
+                    <div class = "team-box-desc">
+                        <h3 class = "name"> Kira </h3>
+                        <h5 class = "role"> Attorney at Law </h5>
+                    </div>
+                </div>
+
+                <div class = "team-box">
+                    <a href = "our-team.html">
+                        <div class = "team-box-img">
+                            <img src = "images/lawyers/majak.jpg" alt = "Majak" />
+                        </div>
+                    </a>
+
+                    <div class = "team-box-desc">
+                        <h3 class = "name"> Majak </h3>
+                        <h5 class = "role"> Attorney at Law </h5>
+                    </div>
+                </div>
+
+                <div class = "team-box">
+                    <a href = "our-team.html">
+                        <div class = "team-box-img">
+                            <img src = "images/lawyers/melissa.jpg" alt = "Melissa" />
+                        </div>
+                    </a>
+
+                    <div class = "team-box-desc">
+                        <h3 class = "name"> Melissa </h3>
+                        <h5 class = "role"> Attorney at Law </h5>
+                    </div>
+                </div>
+            </div>
         </section>
         <!--team end-->
 
-        <!--awards and recognition-->
-        <section class = "awards">
-            <h3> Awards & Recognition </h3>
+        <!--get-in-touch-->
+        <section class = "get-in-touch">
+            <div class = "get-in-touch-container">
+                <span class = "section-label"> CONTACT US </span>
 
-            <div class = "awards-inner">
-                <div class = "awards-inner-img">
-                    <img src = "images/award.jpg" />
-                </div>
+                <h2> Get in Touch </h2>
 
-                <div class = "awards-inner-text">
-                    <h2> The Legal 500 EMEA Rankings 2025 </h2>
-                    <h1> Hassan Luk LLP receives continuously outstanding results. </h1>
-                    <p>
-                        We are immensely proud of our achievements, including being recognised as an Investor In People Company to Work For, a Leading Firm by The Legal 500, and Kenya's Top 200 law firm by The Lawyer.
-                    </p>
-                </div>
+                <form action = "" method = "POST">
+                    <div class = "get-in-touch-form">
+                        <input  type = "text" 
+                                id = "name" 
+                                name = "name" 
+                                placeholder = "Name" 
+                                required />
+
+                        <input  type = "email" 
+                                id = "email" 
+                                name = "email" 
+                                placeholder = "Email" 
+                                required />
+                    </div>
+
+                    <div class = "get-in-touch-form">
+                        <textarea   id = "message" 
+                                    name = "message" 
+                                    rows = "6" 
+                                    placeholder = "Message" 
+                                    required></textarea>
+                    </div>
+
+                    <button> Send a message </button>
+                </form>
             </div>
         </section>
-        <!--awards and recognition end-->
-
-        <!--our offices-->
-        <section class = "office">
-            <div class = "office-header">
-                <h3> Visit our offices </h3>
-                <div class = "office-hours">
-                    <strong> <i class = "fa-regular fa-clock"></i> Office Hours </strong>
-                    <span> Monday – Friday: 08:00 – 16:00 </span>
-                    <em> Closed on weekends and public holidays. </em>
-                </div>
-            </div>
-
-            <div class = "office-inner">
-                <div class = "office-box">
-                    <span> <i class = "fa-solid fa-city"></i> Nairobi, Kenya </span>
-                    <span> <i class = "fa-solid fa-location-dot"> </i> 6th Floor, Applewood, Kilimani </span>
-                    <span> <i class = "fa-solid fa-phone"></i> <a href = "tel:+254759668554"> +254 759 668 554 </a> </span>
-                    <span> <i class = "fa-solid fa-phone"></i> <a href = "tel:+254740666970"> +254 740 666 970 </a> </span>
-                    <span> 
-                        <i class = "fa-regular fa-envelope"></i> 
-                        <a href = "mailto:inquiry@hassanluk.com"> inquiry@hassanluk.com </a> 
-                    </span>
-
-                    <iframe src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7922306118544!2d36.778486174724534!3d-1.2994603986881954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1b1146384663%3A0xd90e0e9abcb51977!2sApplewood%20Adams!5e0!3m2!1sen!2ske!4v1780042414508!5m2!1sen!2ske"
-                            width = "400" 
-                            height = "300" 
-                            style = "border: 0;" 
-                            allowfullscreen = "" 
-                            loading = "lazy" 
-                            referrerpolicy = "no-referrer-when-downgrade"></iframe>
-                </div>
-
-                <div class = "office-box">
-                    <span> <i class = "fa-solid fa-city"></i> Juba, South Sudan </span>
-                    <span> <i class = "fa-solid fa-location-dot"></i> 4th Floor, Juba Bazaar, Riverside </span>
-                    <span> <i class = "fa-solid fa-phone"></i> <a href = "tel:+211920558000"> +211 920 558 000 </a> </span>
-                    <span> 
-                        <i class = "fa-regular fa-envelope"></i> 
-                        <a href = "mailto:inquiry@hassanluk.com"> inquiry@hassanluk.com </a> 
-                    </span>
-
-                    <iframe src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127215.02782401477!2d31.494786995321885!3d4.860686397182802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1712804abcf3b5f9%3A0xd89839286346c433!2sJuba%2C%20South%20Sudan!5e0!3m2!1sen!2ske!4v1780043033059!5m2!1sen!2ske"
-                            width = "400" 
-                            height = "300" 
-                            style = "border: 0;" 
-                            allowfullscreen = "" 
-                            loading = "lazy" 
-                            referrerpolicy = "no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </section>
-        <!--our offices end-->
+        <!--get-in-touch end-->
 
         <!--footer-->
         <section class = "footer">
-            <div class = "footer-inner">
-                <div class = "footer-box">
-                    <img src = "images/logo.png" />
-                    <p> Hassan Luk Advocates </p>
+
+            <div class = "footer-top">
+
+                <div class = "footer-brand">
+                    <img src = "images/logo.png" alt = "Hassan Luk Advocates">
+
+                    <h2> Hassan Luk Advocates </h2>
+
+                    <p>
+                        Strategic legal counsel across East Africa,
+                        delivering practical solutions for businesses,
+                        families and institutions.
+                    </p>
                 </div>
 
-                <div class = "footer-box">
-                    <h2> Quick Links </h2>
+                <div class = "footer-grid">
 
-                    <a href = "index.html" class = "active"> Home </a>
-                    <a href = "about.html"> About </a>
-                    <a href = "our-expertise.html"> Our Expertise </a>
-                    <a href = "our-team.html"> Our Team </a>
-                    <a href = "contact.html"> Contact </a>
+                    <div class = "footer-box">
+                        <h3> Quick Links </h3>
+
+                        <a href = "index.html"> Home </a>
+                        <a href = "about.html"> About </a>
+                        <a href = "our-expertise.html"> Our Expertise </a>
+                        <a href = "our-team.html"> Our Team </a>
+                        <a href = "contact.html"> Contact </a>
+                    </div>
+
+                    <div class = "footer-box">
+                        <h3> Contact </h3>
+
+                        <a href = "tel:+254759668554">
+                            +254 759 668 554
+                        </a>
+
+                        <a href = "tel:+211920558000">
+                            +211 920 558 000
+                        </a>
+
+                        <a href = "mailto:inquiry@hassanlukadvocates.com">
+                            inquiry@hassanlukadvocates.com
+                        </a>
+                    </div>
+
+                    <div class = "footer-box">
+                        <h3> Offices </h3>
+
+                        <p>
+                            6th Floor, Applewood, Kilimani<br>
+                            Nairobi, Kenya
+                        </p>
+
+                        <p>
+                            4th Floor, Juba Bazaar, Riverside<br>
+                            Juba, South Sudan
+                        </p>
+                    </div>
+
+                    <div class = "footer-box">
+                        <h3> Follow Us </h3>
+
+                        <div class = "footer-social">
+
+                            <a href = "">
+                                <i class = "fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href = "">
+                                <i class = "fa-brands fa-x-twitter"></i>
+                            </a>
+
+                            <a href = "">
+                                <i class = "fa-brands fa-linkedin-in"></i>
+                            </a>
+
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class = "footer-box">
-                    <h2> Contact Us </h2>
-
-                    <a href = "tel:+254759668554"> <i class = "fa-solid fa-phone"></i> +254 759 668 554 </a>
-                    <a href = "tel:+211920558000"> <i class = "fa-solid fa-phone"></i> +211 920 558 000 </a>
-                    <a href = "mailto:inquiry@hassanlukadvocates.com"> 
-                        <i class = "fa-regular fa-envelope"></i> 
-                        inquiry@hassanlukadvocates.com 
-                    </a>
-                </div>
-
-                <div class = "footer-box">
-                    <h2> Find Us </h2>
-
-                    <span>
-                        <i class = "fa-solid fa-location-dot"></i>
-                        <span class = "footer-address">
-                            6th Floor, Applewood, Kilimani
-                            <em> <i class = "fa-solid fa-city"></i> Nairobi, Kenya </em>
-                        </span>
-                    </span>
-
-                    <span>
-                        <i class = "fa-solid fa-location-dot"></i>
-                        <span class = "footer-address">
-                            4th Floor, Juba Bazaar, Riverside
-                            <em> <i class = "fa-solid fa-city"></i> Juba, South Sudan </em>
-                        </span>
-                    </span>
-                </div>
             </div>
 
-            <footer>
-                <p> &copy; Hassan Luk Advocates . <span id = "year" class = "year"></span> </p>
-            </footer>
+            <div class = "footer-bottom">
+
+                <div class = "footer-legal">
+                    <a href = ""> Terms & Conditions </a>
+                    <a href = ""> Privacy Policy </a>
+                </div>
+
+                <p> © Hassan Luk Advocates . <span id = "year"></span> . All Rights Reserved. </p>
+
+                <p> Created by <a href = ""> R.Chan </a> </p>
+
+            </div>
+
         </section>
         <!--footer end-->
 
         <!--go up button-->
         <button class = "go-up" id = "goUp" aria-label = "Back to top">
-            <i class = "fa-solid fa-chevron-up"></i>
+            <i class = "fa-solid fa-arrow-up"></i>
         </button>
         <!--go up button end-->
 
@@ -506,4 +727,5 @@
         <!--javascript end-->
 
     </body>
+
 </html>
