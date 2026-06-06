@@ -220,3 +220,13 @@
 
         startAutoSlide();
     }
+
+// script for dropdown
+    document.querySelectorAll('.dropdown-toggle').forEach(btn => 
+    {
+        btn.addEventListener('click', () => 
+        {
+            const li = btn.closest('.has-dropdown');
+            li.classList.toggle('open');
+        });
+    });

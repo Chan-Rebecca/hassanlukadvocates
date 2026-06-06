@@ -29,7 +29,7 @@
         <!--header stripe-->
         <div class = "header-stripe">
             <div class = "header-stripe-left">
-                <a href = "our-team.html"> Our Attorneys </a>
+                <a href = "solutions.html"> Solutions </a>
 
                 <span class = "stripe-divider"> | </span>
 
@@ -66,7 +66,35 @@
                     <ul class = "nav-links">
                         <li> <a href = "index.html"> <span> Home </span> </a> </li>
                         <li> <a href = "about.html"> <span> About </span> </a> </li>
-                        <li> <a href = "our-expertise.html" class = "active"> <span> Our Expertise </span> </a> </li>
+
+                        <li class = "has-dropdown">
+                            <div class = "dropdown-head">
+                                <a href = "our-expertise.html" class = "active"> <span> Our Expertise </span> </a>
+
+                                <button class = "dropdown-toggle" aria-label = "Toggle dropdown">
+                                    <svg    xmlns = "http://www.w3.org/2000/svg" 
+                                            width = "12" 
+                                            height = "12" 
+                                            viewBox = "0 0 24 24" 
+                                            fill = "none" 
+                                            stroke = "currentColor" 
+                                            stroke-width = "2.5" 
+                                            stroke-linecap = "round" 
+                                            stroke-linejoin = "round">
+                                            <polyline points = "6 9 12 15 18 9" />
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                            <ul class="nav-dropdown">
+                                <li><a href="expertise-inner-dispute.html"><span>Dispute Resolution</span></a></li>
+                                <li><a href="expertise-inner-corporate.html"><span>Corporate &amp; Commercial</span></a></li>
+                                <li><a href="expertise-inner-property.html"><span>Property &amp; Conveyancing</span></a></li>
+                                <li><a href="expertise-inner-family.html"><span>Family &amp; Succession</span></a></li>
+                                <li><a href="expertise-inner-notarial.html"><span>Notarial &amp; Certification</span></a></li>
+                            </ul>
+                        </li>
+
                         <li> <a href = "our-team.html"> <span> Our Team </span> </a> </li>
                         <li> <a href = "contact.html" class = "nav-cta"> <span> Get in touch </span> </a> </li>
                     </ul>
@@ -107,97 +135,54 @@
 
             <h2> Legal Services Provided </h2>
 
-            <div class = "expertise-legal">
-                <div class = "expertise-legal-box" id = "dispute">
-                    <div class = "expertise-legal-img">
-                        <img src = "images/expertise/dispute.jpg" />
+            <!--legal services-->
+            <div class="expertise-legal" id = "legal">
+                <a class="expertise-legal-box" href="expertise-inner-dispute.html">
+                    <div class="expertise-legal-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
+                    <h3>Dispute Resolution &amp; Litigation</h3>
+                    <span class="expertise-legal-rule"></span>
+                    <span class="expertise-legal-more">Learn More</span>
+                </a>
 
-                    <div class = "expertise-legal-text">
-                        <h2> Dispute Resolution & Litigation </h2>
-
-                        <h1> 
-                            Protecting your interests through robust representation and strategic conflict resolution, both inside and outside the courtroom. 
-                        </h1>
-
-                        <p>
-                            Disputes can disrupt operations and strain resources. Our team focuses on resolving conflicts efficiently and effectively. We prioritize Alternative Dispute Resolution (ADR) methods, such as mediation and arbitration, to achieve swift, amicable outcomes. When trial becomes unavoidable, our seasoned litigators provide aggressive, results-driven representation across all levels of the court system to safeguard your rights and reputation.
-                        </p>
+                <a class="expertise-legal-box" href="expertise-inner-corporate.html">
+                    <div class="expertise-legal-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
                     </div>
-                </div>
+                    <h3>Corporate &amp; Commercial Law</h3>
+                    <span class="expertise-legal-rule"></span>
+                    <span class="expertise-legal-more">Learn More</span>
+                </a>
 
-                <div class = "expertise-legal-box" id = "corporate">
-                    <div class = "expertise-legal-img">
-                        <img src = "images/expertise/corporate.jpg" />
+                <a class="expertise-legal-box" href="expertise-inner-property.html">
+                    <div class="expertise-legal-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                     </div>
+                    <h3>Property &amp; Conveyancing</h3>
+                    <span class="expertise-legal-rule"></span>
+                    <span class="expertise-legal-more">Learn More</span>
+                </a>
 
-                    <div class = "expertise-legal-text">
-                        <h2> Corporate & Commercial Law </h2>
-
-                        <h1> 
-                            Empowering businesses with sound legal counsel from inception to expansion, ensuring compliance and long-term growth. 
-                        </h1>
-
-                        <p>
-                            In a dynamic business landscape, navigating regulatory legal frameworks requires foresight. We offer comprehensive corporate guidance to startups, SMEs, and established multinationals. Our services span corporate governance, regulatory compliance, contract drafting and negotiation, mergers and acquisitions, and intellectual property protection. We act as trusted legal partners, ensuring your business operations are legally sound and strategically positioned for scale.
-                        </p>
+                <a class="expertise-legal-box" href="expertise-inner-family.html">
+                    <div class="expertise-legal-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                     </div>
-                </div>
+                    <h3>Family &amp; Succession</h3>
+                    <span class="expertise-legal-rule"></span>
+                    <span class="expertise-legal-more">Learn More</span>
+                </a>
 
-                <div class = "expertise-legal-box" id = "property">
-                    <div class = "expertise-legal-img">
-                        <img src = "images/expertise/property.jpg" />
+                <a class="expertise-legal-box" href="expertise-inner-notarial.html">
+                    <div class="expertise-legal-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
                     </div>
-
-                    <div class = "expertise-legal-text">
-                        <h2> Property & Conveyancing </h2>
-
-                        <h1> 
-                            Securing your real estate investments with seamless title transfers, rigorous due diligence, and structured transactions. 
-                        </h1>
-
-                        <p>
-                            Real estate transactions involve significant capital and distinct risks. We provide end-to-end legal support for buyers, sellers, developers, and landlords. From conducting rigorous property due diligence and title searches to drafting lease agreements and executing seamless conveyancing procedures, our team ensures that your property investments are secure, compliant, and legally fortified.
-                        </p>
-                    </div>
-                </div>
-
-                <div class = "expertise-legal-box" id = "family">
-                    <div class = "expertise-legal-img">
-                        <img src = "images/expertise/family.jpg" />
-                    </div>
-
-                    <div class = "expertise-legal-text">
-                        <h2> Family & Succession </h2>
-
-                        <h1> 
-                            Compassionate guidance and structured legal solutions for life’s most personal matters and estate planning. 
-                        </h1>
-
-                        <p>
-                            Navigating family transitions and future planning requires a balance of empathy and absolute legal precision. We assist clients in protecting their legacies and supporting their loved ones through tailored wills, trust creation, estate planning, and probate administration. Additionally, we provide sensitive, professional counsel in family law matters, including divorce, matrimonial property division, and child custody arrangements.
-                        </p>
-                    </div>
-                </div>
-
-                <div class = "expertise-legal-box" id = "notarial">
-                    <div class = "expertise-legal-img">
-                        <img src = "images/expertise/notarial.jpg" />
-                    </div>
-
-                    <div class = "expertise-legal-text">
-                        <h2> Notarial & Certification Services </h2>
-
-                        <h1> 
-                            Providing official authentication, witnessing, and legal verification to ensure your documents meet global and local standards. 
-                        </h1>
-
-                        <p>
-                            Validating the authenticity of critical documents is essential for legal enforceability at home and abroad. As certified Notaries Public and Commissioners for Oaths, we offer official verification services. This includes notarizing commercial contracts, certifying identification and academic documents, attesting powers of attorney, and administering oaths or affidavits to ensure full compliance with regulatory authorities.
-                        </p>
-                    </div>
-                </div>
+                    <h3>Notarial &amp; Certification Services</h3>
+                    <span class="expertise-legal-rule"></span>
+                    <span class="expertise-legal-more">Learn More</span>
+                </a>
             </div>
+            <!--legal services end-->
 
             <h2> Regulatory Compliance </h2>
 
