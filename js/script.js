@@ -222,11 +222,25 @@
     }
 
 // script for dropdown
-    document.querySelectorAll('.dropdown-toggle').forEach(btn => 
+    document.querySelectorAll(".dropdown-toggle").forEach(btn =>
     {
-        btn.addEventListener('click', () => 
+        btn.addEventListener("click", () =>
         {
-            const li = btn.closest('.has-dropdown');
-            li.classList.toggle('open');
+            const li = btn.closest(".has-dropdown");
+            const isOpen = li.classList.contains("open");
+
+            document.querySelectorAll(".has-dropdown.open").forEach(el => el.classList.remove("open"));
+
+            if (!isOpen) li.classList.add("open");
+        });
+    });
+
+// script for solutions inner full text
+    document.querySelectorAll(".accordion-head").forEach(btn => 
+    {
+        btn.addEventListener("click", () => 
+        {
+            const item = btn.closest(".accordion-item");
+            item.classList.toggle("open");
         });
     });

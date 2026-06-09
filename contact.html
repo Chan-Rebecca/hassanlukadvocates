@@ -29,7 +29,29 @@
         <!--header stripe-->
         <div class = "header-stripe">
             <div class = "header-stripe-left">
-                <a href = "solutions.html"> Solutions </a>
+                <div class = "stripe-dropdown">
+                    <a href = "solutions.html" class = "stripe-dropdown-trigger">
+                        Solutions
+                        <svg    xmlns = "http://www.w3.org/2000/svg" 
+                                width = "10" 
+                                height = "10" 
+                                viewBox = "0 0 24 24" 
+                                fill = "none" 
+                                stroke = "currentColor" 
+                                stroke-width = "2.5" 
+                                stroke-linecap = "round" 
+                                stroke-linejoin = "round">
+                                <polyline points = "6 9 12 15 18 9" />
+                        </svg>
+                    </a>
+
+                    <ul class = "stripe-nav-dropdown">
+                        <li> <a href = "solutions-virtual-general-counsel.html"><span>Virtual General Counsel</span></a> </li>
+                        <li> <a href = "solutions-outsourced-compliance-solutions.html"><span>Outsourced Compliance Solutions</span></a> </li>
+                        <li> <a href = "solutions-legal-operations.html"><span>Legal Operations</span></a></li>
+                        <li> <a href = "solutions-advice-for-businesses.html"><span>Start-up Legal Advice</span></a></li>
+                    </ul>
+                </div>
 
                 <span class = "stripe-divider"> | </span>
 
@@ -64,7 +86,7 @@
                 <!--nav-->
                 <nav class = "navbar" id = "navbar">
                     <ul class = "nav-links">
-                        <li> <a href = "index.html"> <span> Home </span> </a> </li>
+                        <li> <a href = "index.html" class = "active"> <span> Home </span> </a> </li>
                         <li> <a href = "about.html"> <span> About </span> </a> </li>
 
                         <li class = "has-dropdown">
@@ -95,12 +117,25 @@
                             </ul>
                         </li>
 
+                        <li> <a href = "services.html"> <span> Services </span> </a> </li>
                         <li> <a href = "our-team.html"> <span> Our Team </span> </a> </li>
                         <li> <a href = "contact.html" class = "nav-cta"> <span> Get in touch </span> </a> </li>
 
-                        <li class = "mobile-only">
-                            <a href = "solutions.html"> <span> Solutions </span> </a>
+                        <li class="mobile-only has-dropdown">
+                            <div class="dropdown-head">
+                                <a href="solutions.html"><span>Solutions</span></a>
+                                <button class="dropdown-toggle" aria-label="Toggle dropdown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                                </button>
+                            </div>
+                            <ul class="nav-dropdown">
+                                <li><a href="solutions-virtual-general-counsel.html"><span>Virtual General Counsel</span></a></li>
+                                <li><a href="solutions-outsourced-compliance-solutions.html"><span>Outsourced Compliance</span></a></li>
+                                <li><a href="solutions-legal-operations.html"><span>Legal Operations</span></a></li>
+                                <li><a href="solutions-advice-for-businesses.html"><span>Start-up Legal Advice</span></a></li>
+                            </ul>
                         </li>
+
                         <li class = "mobile-only">
                             <a href = "insights.html"> <span> Insights </span> </a>
                         </li>
@@ -147,13 +182,6 @@
                             <span> <i class="fa-solid fa-location-dot"></i> 6th Floor, Applewood, Kilimani </span>
                             <span> <i class="fa-solid fa-phone"></i> <a href="tel:+254759668554"> +254 759 668 554 </a> </span>
                             <span> <i class="fa-solid fa-phone"></i> <a href="tel:+254740666970"> +254 740 666 970 </a> </span>
-                            <span> <i class="fa-regular fa-envelope"></i> <a href="mailto:inquiry@hassanluk.com"> inquiry@hassanluk.com </a> </span>
-                        </div>
-
-                        <div class="visit-box">
-                            <span class="visit-city"> <i class="fa-solid fa-city"></i> Juba, South Sudan </span>
-                            <span> <i class="fa-solid fa-location-dot"></i> 4th Floor, Juba Bazaar, Riverside </span>
-                            <span> <i class="fa-solid fa-phone"></i> <a href="tel:+211920558000"> +211 920 558 000 </a> </span>
                             <span> <i class="fa-regular fa-envelope"></i> <a href="mailto:inquiry@hassanluk.com"> inquiry@hassanluk.com </a> </span>
                         </div>
                     </div>
@@ -266,31 +294,6 @@
                             6th Floor, Applewood, Kilimani<br>
                             Nairobi, Kenya
                         </p>
-
-                        <p>
-                            4th Floor, Juba Bazaar, Riverside<br>
-                            Juba, South Sudan
-                        </p>
-                    </div>
-
-                    <div class = "footer-box">
-                        <h3> Follow Us </h3>
-
-                        <div class = "footer-social">
-
-                            <a href = "">
-                                <i class = "fa-brands fa-facebook-f"></i>
-                            </a>
-
-                            <a href = "">
-                                <i class = "fa-brands fa-x-twitter"></i>
-                            </a>
-
-                            <a href = "">
-                                <i class = "fa-brands fa-linkedin-in"></i>
-                            </a>
-
-                        </div>
                     </div>
 
                 </div>
@@ -324,4 +327,5 @@
         <!--javascript end-->
 
     </body>
+
 </html>

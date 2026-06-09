@@ -29,7 +29,29 @@
         <!--header stripe-->
         <div class = "header-stripe">
             <div class = "header-stripe-left">
-                <a href = "solutions.html"> Solutions </a>
+                <div class = "stripe-dropdown">
+                    <a href = "solutions.html" class = "stripe-dropdown-trigger">
+                        Solutions
+                        <svg    xmlns = "http://www.w3.org/2000/svg" 
+                                width = "10" 
+                                height = "10" 
+                                viewBox = "0 0 24 24" 
+                                fill = "none" 
+                                stroke = "currentColor" 
+                                stroke-width = "2.5" 
+                                stroke-linecap = "round" 
+                                stroke-linejoin = "round">
+                                <polyline points = "6 9 12 15 18 9" />
+                        </svg>
+                    </a>
+
+                    <ul class = "stripe-nav-dropdown">
+                        <li> <a href = "solutions-virtual-general-counsel.html"><span>Virtual General Counsel</span></a> </li>
+                        <li> <a href = "solutions-outsourced-compliance-solutions.html"><span>Outsourced Compliance Solutions</span></a> </li>
+                        <li> <a href = "solutions-legal-operations.html"><span>Legal Operations</span></a></li>
+                        <li> <a href = "solutions-advice-for-businesses.html"><span>Start-up Legal Advice</span></a></li>
+                    </ul>
+                </div>
 
                 <span class = "stripe-divider"> | </span>
 
@@ -64,7 +86,7 @@
                 <!--nav-->
                 <nav class = "navbar" id = "navbar">
                     <ul class = "nav-links">
-                        <li> <a href = "index.html"> <span> Home </span> </a> </li>
+                        <li> <a href = "index.html" class = "active"> <span> Home </span> </a> </li>
                         <li> <a href = "about.html"> <span> About </span> </a> </li>
 
                         <li class = "has-dropdown">
@@ -95,12 +117,25 @@
                             </ul>
                         </li>
 
+                        <li> <a href = "services.html"> <span> Services </span> </a> </li>
                         <li> <a href = "our-team.html"> <span> Our Team </span> </a> </li>
                         <li> <a href = "contact.html" class = "nav-cta"> <span> Get in touch </span> </a> </li>
 
-                        <li class = "mobile-only">
-                            <a href = "solutions.html"> <span> Solutions </span> </a>
+                        <li class="mobile-only has-dropdown">
+                            <div class="dropdown-head">
+                                <a href="solutions.html"><span>Solutions</span></a>
+                                <button class="dropdown-toggle" aria-label="Toggle dropdown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                                </button>
+                            </div>
+                            <ul class="nav-dropdown">
+                                <li><a href="solutions-virtual-general-counsel.html"><span>Virtual General Counsel</span></a></li>
+                                <li><a href="solutions-outsourced-compliance-solutions.html"><span>Outsourced Compliance</span></a></li>
+                                <li><a href="solutions-legal-operations.html"><span>Legal Operations</span></a></li>
+                                <li><a href="solutions-advice-for-businesses.html"><span>Start-up Legal Advice</span></a></li>
+                            </ul>
                         </li>
+
                         <li class = "mobile-only">
                             <a href = "insights.html"> <span> Insights </span> </a>
                         </li>
@@ -118,83 +153,70 @@
         <!--header end-->
 
         <!--solutions-->
-        <section class = "solutions">
-            <div class = "solutions-intro">
-                <h1> Legal Solutions for Businesses </h1>
-
-                <h2> Our tax experts’ technical expertise is combined with a commercial and responsive approach to all transactions. </h2>
-
+        <section class="solutions">
+            <div class="solutions-intro">
+                <h1>Legal Solutions for Businesses & Legal Teams</h1>
+                <h2>Custom-fit legal solutions</h2>
                 <p>
-                    Taking on or being chased by KRA can be incredibly stressful. Our experts provide practical advice on any dispute with KRA and have extensive experience supporting, among others, ultra high net worth individuals, corporates charities, and trusts.
-                </p>
-
-                <p>
-                    We advise on and implement tax effective solutions for individuals and families, including owners of privately held businesses, and high-net-worth individuals with respect to their personal and corporate tax planning needs.
-                </p>
-
-                <h3> Why our tax lawyers? </h3>
-
-                <p> 
-                    Our team has the required experience in negotiating and resolving tax matters with the Kenya Revenue Authority (KRA), and the expertise to protect your business should the matter escalate to a tribunal or court.
-                </p>
-
-                <p>
-                    Our relationship with the tax authorities is based on mutual respect. We regularly succeed in settling complex disputes, even in situations where a compromise already seemed out of reach.
+                    Our legal solutions are tailored to the unique challenges and needs of your business or legal team, offering flexible adaptable legal solutions as your needs change.
                 </p>
             </div>
 
-            <div class = "tax-services" id = "solutions">
-                <h3> Explore Our Tax Services </h3>
+            <div class="legal-solutions" id="solutions">
+                <div class="legal-solutions-container">
 
-                <div class = "tax-container">
-                    <div class="tax-box">
-                        <a href="solutions-personal.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-                            <span>Personal Tax</span>
+                    <div class="legal-box">
+                        <a href="solutions-virtual-general-counsel.html">
+                            <div class="legal-box-img">
+                                <img src="images/solutions/virtual.jpg" />
+                            </div>
+                            <div class="legal-box-text">
+                                <h4>Virtual General Counsel</h4>
+                                <p>Our Virtual General Counsel service provides integrated, strategic legal support to businesses without full legal teams. Acting as a trusted senior adviser, your VGC becomes a seamless extension of your leadership team.</p>
+                                <span class="legal-box-more">Read More</span>
+                            </div>
                         </a>
                     </div>
 
-                    <div class="tax-box">
-                        <a href="solutions-vat.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-                            <span>VAT &amp; Indirect Tax</span>
+                    <div class="legal-box">
+                        <a href="solutions-outsourced-compliance-solutions.html">
+                            <div class="legal-box-img">
+                                <img src="images/solutions/outsource.jpg" />
+                            </div>
+                            <div class="legal-box-text">
+                                <h4>Outsourced Compliance Solutions</h4>
+                                <p>By combining seasoned legal and regulatory compliance expertise with state-of-the-art regulatory technology, we provide cost-effective and reliable end-to-end compliance management.</p>
+                                <span class="legal-box-more">Read More</span>
+                            </div>
                         </a>
                     </div>
 
-                    <div class="tax-box">
-                        <a href="solutions-corporate.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
-                            <span>Corporate Tax</span>
+                    <div class="legal-box">
+                        <a href="solutions-legal-operations.html">
+                            <div class="legal-box-img">
+                                <img src="images/solutions/legal.jpg" />
+                            </div>
+                            <div class="legal-box-text">
+                                <h4>Legal Operations</h4>
+                                <p>Our Legal operations experts work with you to ensure your legal team works smarter and not harder, helping you maximise and enhance productivity, reduce costs, streamline processes and optimise business structure.</p>
+                                <span class="legal-box-more">Read More</span>
+                            </div>
                         </a>
                     </div>
 
-                    <div class="tax-box">
-                        <a href="solutions-payroll.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/><line x1="14" y1="15" x2="18" y2="15"/></svg>
-                            <span>Payroll &amp; Employment Tax</span>
+                    <div class="legal-box">
+                        <a href="solutions-advice-for-businesses.html">
+                            <div class="legal-box-img">
+                                <img src="images/solutions/start-up.jpg" />
+                            </div>
+                            <div class="legal-box-text">
+                                <h4>Start-up Legal Advice for Businesses</h4>
+                                <p>As a start-up, you'll want to have the right legal foundations in place to launch and scale your business. Our start-up business packages give you access to specialist advice while providing cost certainty on critical support to launch and scale your start-up.</p>
+                                <span class="legal-box-more">Read More</span>
+                            </div>
                         </a>
                     </div>
 
-                    <div class="tax-box">
-                        <a href="solutions-real-estate.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                            <span>Real Estate Tax</span>
-                        </a>
-                    </div>
-
-                    <div class="tax-box">
-                        <a href="solutions-customs.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-                            <span>Customs &amp; Imports</span>
-                        </a>
-                    </div>
-
-                    <div class="tax-box">
-                        <a href="solutions-tax-dispute.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                            <span>Tax Disputes &amp; Investigations</span>
-                        </a>
-                    </div>
                 </div>
             </div>
         </section>
@@ -252,31 +274,6 @@
                             6th Floor, Applewood, Kilimani<br>
                             Nairobi, Kenya
                         </p>
-
-                        <p>
-                            4th Floor, Juba Bazaar, Riverside<br>
-                            Juba, South Sudan
-                        </p>
-                    </div>
-
-                    <div class = "footer-box">
-                        <h3> Follow Us </h3>
-
-                        <div class = "footer-social">
-
-                            <a href = "">
-                                <i class = "fa-brands fa-facebook-f"></i>
-                            </a>
-
-                            <a href = "">
-                                <i class = "fa-brands fa-x-twitter"></i>
-                            </a>
-
-                            <a href = "">
-                                <i class = "fa-brands fa-linkedin-in"></i>
-                            </a>
-
-                        </div>
                     </div>
 
                 </div>
@@ -310,4 +307,5 @@
         <!--javascript end-->
 
     </body>
+
 </html>
