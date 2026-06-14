@@ -236,11 +236,43 @@
     });
 
 // script for solutions inner full text
-    document.querySelectorAll(".accordion-head").forEach(btn => 
+    document.querySelectorAll(".accordion-head").forEach(btn =>
     {
-        btn.addEventListener("click", () => 
+        btn.addEventListener("click", () =>
         {
             const item = btn.closest(".accordion-item");
-            item.classList.toggle("open");
+            const isOpen = item.classList.contains("open");
+
+            // Close all items
+            document.querySelectorAll(".accordion-item").forEach(acc =>
+            {
+                acc.classList.remove("open");
+            });
+
+            // Re-open the clicked item only if it wasn't already open
+            if (!isOpen)
+            {
+                item.classList.add("open");
+            }
+        });
+    });
+
+// script for accordion in sector page
+    document.querySelectorAll(".inner-accordion-head").forEach(btn =>
+    {
+        btn.addEventListener("click", () =>
+        {
+            const item = btn.closest(".inner-accordion-item");
+            const isOpen = item.classList.contains("open");
+
+            document.querySelectorAll(".inner-accordion-item").forEach(acc =>
+            {
+                acc.classList.remove("open");
+            });
+
+            if (!isOpen)
+            {
+                item.classList.add("open");
+            }
         });
     });
