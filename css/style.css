@@ -4999,6 +4999,40 @@ header.scrolled
     margin: 0;
 }
 
+.accordion-body ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin: 8px 0 0;
+    max-width: 680px;
+}
+
+.accordion-body ul li
+{
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.95;
+    letter-spacing: 0.02em;
+    color: var(--text-muted);
+    padding-left: 22px;
+    position: relative;
+}
+
+.accordion-body ul li::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 6px;
+    height: 1px;
+    background: var(--burgundy);
+}
+
 /* footer */
 .managed-compliance-footer
 {
